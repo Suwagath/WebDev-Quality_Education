@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Sen', sans-serif;
+    background-color: #ebf4f6;
+    color: #071952;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #071952;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label, p {
+    margin-top: 10px;
+    color: #071952;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"], textarea, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #37b7c3;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .satisfaction-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .satisfaction-scale label {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  input[type="radio"] {
+    margin-left: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #37b7c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #088395;
+  }

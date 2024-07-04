@@ -1,0 +1,26 @@
+/* Cards Section Styles */
+.cards-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: #37b7c3;
+  color: #ebf4f6;
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 14px;
+}
