@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
   
     form.addEventListener("submit", function(event) {
-      let valid = true;
+      let validation = true;
   
       // Validate Name
       const name = document.getElementById("name").value.trim();
       if (name === "") {
-        valid = false;
+        validation = false;
         alert("Name is required.");
       }
   
@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
       const email = document.getElementById("email").value.trim();
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(email)) {
-        valid = false;
+        validation = false;
         alert("Please enter a valid email address.");
       }
   
       // Validate First Visit
       const firstVisit = document.querySelector('input[name="first_visit"]:checked');
       if (!firstVisit) {
-        valid = false;
+        validation = false;
         alert("Please select if this is your first visit.");
       }
   
@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", function() {
       // Validate Updates
       const updates = document.getElementById("updates").value;
       if (updates === "") {
-        valid = false;
+        validation = false;
         alert("Please select if you would like to receive updates.");
       }
   
-      if (!valid) {
+      if (!validation) {
         event.preventDefault();
       }
     });
