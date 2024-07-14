@@ -18,7 +18,7 @@ let profile = [];
 function displayQuestions(index){
     document.getElementById("customPrompt").style.display = "block";
     document.getElementById("question").textContent = questions_array[index];
-    //this is used when you jump to previous question.
+    
     
     if(profile[index]!=null){
         document.getElementById("answer").value = profile[index];

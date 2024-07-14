@@ -11,7 +11,7 @@ body {
 h1, h2 {
     color: #090705ab;
     text-align: center;
-    background-color: #428e7b9d;
+    background-color: #37b7c3d2;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -32,7 +32,7 @@ h2 {
 
 #profileInformation {
     margin: 20px auto;
-    background-color: rgba(11, 118, 65, 0.605);
+    background-color: #37b7c382;
     width: 90%;
     max-width: 700px;
     font-weight: bold;
@@ -46,10 +46,11 @@ h2 {
     font-weight: bolder;
     color: #000000;
     margin-top: 20px;
-    background-color: rgba(11, 118, 65, 0.605);
+    background-color: #37b7c382;
     border-radius: 30px;
     padding: 5px 15px;
     text-align: center;
+    margin-left: 5px;
 }
 
 #customPrompt {
@@ -57,7 +58,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #428e7b;
+    background-color:#37b7c3;
     border: 1px solid black;
     padding: 20px;
     width: 90%;
@@ -68,10 +69,11 @@ h2 {
 }
 
 .promptHead {
-    background-color: #333333a0;
+    background-color: #071952;
     color: #fff;
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .promptBody {
@@ -79,9 +81,10 @@ h2 {
 }
 
 .promptFoot {
-    background-color: #333333a0;
+    background-color: #071952;
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .start button {
@@ -92,15 +95,19 @@ h2 {
     cursor: pointer;
     text-align: center;
     border-radius: 5px;
-    background-color: rgba(94, 32, 94, 0.772);
+    background-color: #071952;
+    color: white;
+}
+.start button:hover{
+    color: #37b7c3d2;
 }
 
 .promptFoot button {
     margin: 5px 5px;
     padding: 10px 20px;
-    border: solid rgba(94, 32, 94, 0.731);
+    border: solid #37b7c3;
     border-radius: 20px;
-    background-color: #333;
+    background-color: #071952;
     color: #fff;
     cursor: pointer;
 }
