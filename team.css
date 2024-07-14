@@ -1,0 +1,97 @@
+h1{
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    color: #071952;
+    font-size: 50px;
+    margin-bottom: -100px;
+    background-color: white;
+    border: 5px solid #071952 ;
+    width: 20%;
+    margin-left: 595px;
+    border-radius: 30px;
+}
+
+.team{
+    position: relative;
+    padding: 180px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px 50px;
+    flex-wrap: center;
+    align-items: center;
+}
+
+.teamMember .thumbnail{
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 35px 80px rgba(24, 109, 255, 0.821);
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 400px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.241);
+}
+
+.teamMember .thumbnail:hover{
+    height: 600px;
+    width: 400px;
+    opacity: 1;
+    background: lightblue;
+}
+
+.thumbnailImage{
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    height: 300px;
+    background: rgba(46, 46, 132, 0.686);
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.thumbnail:hover .thumbnailImage{
+    top: -80px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 15px 45px rgba(24, 109, 255, 0.821);
+    scale: 1;
+    transition: 2s;
+    opacity: 0.5;
+}
+
+.thumbnailImage img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .teamMember .info{
+    display: none;
+    position: relative;
+    transition: 0.5s all;
+    top: 50px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team .teamMember:hover .info{
+    display: inline;
+    top: -200px;
+    height: 250px;
+}
+/**//**//**/
+
+
+
+
+
