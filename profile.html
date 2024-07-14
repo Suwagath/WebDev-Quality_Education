@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div>
+        <h1>User Profile</h1>
+        
+        <div class="proInfo">
+            <h2>Profile Information:</h2>
+            <div id="profileInformation"></div>
+        </div>
+    </div>
+    
+    <div id="customPrompt">
+        <div class="promptHead">
+            <span id="customHead">Profile Update</span>
+        </div>
+
+        <div class="=promptBody">
+            <div id="message">
+                <div id="question"></div>
+                <input type="text" id="answer" class="message">
+            </div>
+        </div>
+        
+        <div class="promptFoot">
+            <button onclick="previous()">Previous</button>
+            <button onclick="skip()">Skip</button>
+            <button onclick="next()">Next</button>
+        </div>
+    </div>
+
+    <div class="profileStatus">
+        <p>Profile Status:<span id="status">0%</span></p>
+    </div>
+    
+    <div class="start"><button onclick="start()">Start Profile Creation</button></div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

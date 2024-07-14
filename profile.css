@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(pencil2.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+h1{
+    color: #090705ab;
+    text-align: center;
+    background-color: #428e7b9d;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+h2{
+    color: #090705ab;
+    text-align: center;
+    background-color: #428e7b9d;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+
+.proInfo{
+    text-align: center;
+    color:#000000;
+}
+
+#profileInformation{
+    margin-bottom: 20px;
+    background-color: rgba(11, 118, 65, 0.605);
+    width: 700px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50px;
+    position:relative;
+    margin-left: 380px;
+    padding: 5px;
+  }
+  
+.profileStatus{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #000000;
+    margin-top: 100px;
+    position: absolute;
+    background-color: rgba(11, 118, 65, 0.605);
+    border-radius: 30px;
+    padding: 1px 10px;
+}
+  
+  /* Custom Prompt Box */
+  
+#customPrompt{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #428e7b;
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    border-radius: 5%;
+}
+  
+.promptHead{
+    background-color: #333333a0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+  
+.promptBody{
+    padding: 20px;
+}
+  
+.promptFoot{
+    background-color: #333333a0;
+    padding: 10px;
+    text-align: center;
+}
+
+.start button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(94, 32, 94, 0.772);
+}
+  
+.promptFoot button {
+    margin: 5px 5px;
+    padding: 10px 20px;
+    border: solid  rgba(94, 32, 94, 0.731);
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+.promptFoot button:hover {
+    background-color: #444;
+}
+  
+#message {
+    margin-bottom: 20px;
+}
+  
+#question {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+  
+#answer {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  /* Show/Hide Custom Prompt Box */
+  
+#customPrompt.show {
+    display: block;
+}
