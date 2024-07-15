@@ -1,0 +1,60 @@
+.editor{
+    margin: 20px 20px;
+    background-color: #37b7c338;                                                                                                                           
+    border: 3px inset #071952 ;
+    text-align: center;
+    border-radius: 40px;
+    width: auto;
+}
+
+.aboutMe{
+    background-color:#37b7c338;
+    border: 5px outset #071952;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 5px 20px 30px #071952a9;
+}
+
+.name{
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    width: auto;
+}
+
+.role{
+    width: auto;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.myTask{
+    text-align: center;
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.page{
+    text-align: center;
+    font-size: 20px;
+}
+
+.cont{
+    text-align: center;
+    font-size: 18px;
+}
+
+hr{
+    width: 40%;
+}
+
+

@@ -1,0 +1,123 @@
+body {
+    margin: auto;
+    font-family: sans-serif;
+}
+
+/*Styles applied to links*/
+
+li {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #37b7c3b6;
+    border-radius: 50px;
+    margin: 20px 30px;
+    color: #000000;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li:hover {
+    color: #ffffff;
+    background-color: #071952;
+    
+}
+
+li a:visited {
+    color: rgb(255, 255, 255);
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+#backToTop {
+    margin-left: 45%;
+}
+
+/*Styles applied for images*/
+.pic1{
+    position: absolute;
+    top: 37%;
+    right: 10%;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.pic2{
+    position: absolute;
+    top: 70%;
+    height: 320px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.pic3{
+    position: absolute;
+    top: 137%;
+    right: 1%;
+    height: 280px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+/*Styles applied to content boxes*/
+
+.wholeContent {
+    margin: 0 50px;
+    text-align: justify;
+}
+
+.innovative {
+    font-size: 40px;
+    text-align: center;
+}
+
+.intro .heading {
+    font-size: 25px;
+}
+
+.intro {
+    background-color: #37b7c3b6;
+    border-radius: 10px;
+    padding: 5px 30px;
+    width: 70%;
+    margin-left: 2%;
+    color: #071952;
+    margin-top: 50px;
+}
+
+.contentOne, .contentThree {
+    background-color: #071952;
+    border-radius: 10px;
+    padding: 5px 30px;
+    width: 70%;
+    margin-left: 23%;
+    color: #ffffff;
+}
+
+.oneABC, .twoABC, .threeABC {
+    margin: 0 0 0 60px;
+}
+
+.contentTwo {
+    background-color: #37b7c3b6;
+    border-radius: 10px;
+    padding: 5px 30px;
+    width: 70%;
+    margin-left: 2%;
+    color: #000000;
+}
+
+.conclusion {
+    background-color: #37b7c3b6;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin-bottom: 50px;
+    margin-left: 2%;
+    color: #071952;
+    width: 70%;
+}

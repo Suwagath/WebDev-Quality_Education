@@ -11,6 +11,8 @@ body {
   background: #071952;
   padding: 20px;
   color: #ebf4f6;
+  position: sticky; top: 0;
+  
 }
 
 .header-menu {
@@ -18,6 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+ 
 }
 
 .logo {
@@ -39,6 +42,11 @@ body {
 }
 
 .nav-link:hover {
+  color: #37b7c3;
+  border-bottom: 2px solid #37b7c3;
+}
+
+.nav-link.active {
   color: #37b7c3;
   border-bottom: 2px solid #37b7c3;
 }
