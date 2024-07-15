@@ -2,10 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(pencil2.jpeg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 h1, h2 {
@@ -133,12 +129,10 @@ h2 {
     border-radius: 5px;
 }
 
-/* Show/Hide Custom Prompt Box */
 #customPrompt.show {
     display: block;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     h1 {
         font-size: 1.8em;
