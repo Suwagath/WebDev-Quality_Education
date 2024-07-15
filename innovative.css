@@ -3,13 +3,16 @@ body {
     font-family: sans-serif;
 }
 
+/*Styles applied to links*/
+
 li {
     display: inline;
     padding: 10px 20px;
     background-color: #37b7c3b6;
     border-radius: 50px;
-    margin: 20px 20px;
-    color: #071952;
+    margin: 20px 30px;
+    color: #000000;
+    cursor: pointer;
 }
 
 li a {
@@ -17,29 +20,30 @@ li a {
 }
 
 li:hover {
-    color: #37b7c3b6;
+    color: #ffffff;
     background-color: #071952;
-}
-
-li a:link {
-    color: white;
+    
 }
 
 li a:visited {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 li a:hover {
-    color: #37b7c3b6;
-}
-
-li a:active {
-    color: black;
+    color: #ffffff;
 }
 
 #backToTop {
-    margin-left: 40%;
+    margin-left: 45%;
 }
+
+/*Styles applied for images*/
+.pic1{
+    align-items: right;
+    
+}
+
+/*Styles applied to content boxes*/
 
 .wholeContent {
     margin: 0 50px;
@@ -71,7 +75,7 @@ li a:active {
     padding: 5px 30px;
     width: 70%;
     margin-left: 23%;
-    color: #37b7c3b6;
+    color: #ffffff;
 }
 
 .oneABC, .twoABC, .threeABC {
@@ -84,7 +88,7 @@ li a:active {
     padding: 5px 30px;
     width: 70%;
     margin-left: 2%;
-    color: #071952;
+    color: #000000;
 }
 
 .conclusion {
