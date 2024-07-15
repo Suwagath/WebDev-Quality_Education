@@ -1,0 +1,35 @@
+.editor{
+    margin: 20px 20px;
+    background-color: #37b7c338;                                                                                                                           
+    border: 3px inset #071952 ;
+    text-align: center;
+    border-radius: 40px;
+    width: auto;
+}
+
+.name{
+    text-align: center;
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.role{
+    margin: 10px 575px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.description{
+    text-align: center;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.myTask{
+    text-align: center;
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
