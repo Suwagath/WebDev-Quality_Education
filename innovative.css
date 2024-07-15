@@ -39,8 +39,29 @@ li a:hover {
 
 /*Styles applied for images*/
 .pic1{
-    align-items: right;
-    
+    position: absolute;
+    top: 37%;
+    right: 10%;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.pic2{
+    position: absolute;
+    top: 70%;
+    height: 320px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.pic3{
+    position: absolute;
+    top: 137%;
+    right: 1%;
+    height: 280px;
+    width: 350px;
+    border-radius: 10px;
 }
 
 /*Styles applied to content boxes*/
