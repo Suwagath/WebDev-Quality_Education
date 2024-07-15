@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+:root {
+    --main-color: #005f73; /* Default color */
+    --main-font: sans-serif; /* Default font */
+}
+
+body {
+    background-color: aliceblue;
+    margin-top: 80px; /* Adjust based on header height */
+}
+
+
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.2) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.full {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /* Start hidden */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.full img {
+    width: 90%;
+    max-width: 500px;
+}
+
+.full p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom to create space between the image and the text */
+    font-size: 1.2em;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px 10px;
+    z-index: 1001;
+}
+
+.nav.left {
+    left: 10px;
+}
+
+.nav.right {
+    right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.switcher {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    z-index: 101;
+}
+
+.switcherbtn {
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.theme,
+.fonts {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.theme-button,
+.font-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.font-button {
+    border-radius: 5px;
+    width: auto;
+    padding: 5px 10px;
+}
+
+header {
+    background: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    z-index: 101;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}

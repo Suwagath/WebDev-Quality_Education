@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+    <script src="Gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="../gallery final/suwagth/home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fullscreen image container -->
+    <div class="full" id="fullimg"> 
+        <span class="nav left" onclick="moveleft()">&lt;</span>
+        <img src="image/img1.jpg" alt="" id="fullimg1">
+        <p id="fullimg-description"></p> <!-- Description container -->
+        <span class="nav right" onclick="moveright()">&gt;</span>
+        <span class="close" onclick="closeimg()">x</span>
+    </div>
+
+    <!-- Gallery images -->
+    <div class="img-gallery">
+        <img src="image/image 1.jpg" alt="Image 1" data-description="In the classroom, the teacher engages with students, sharing knowledge and sparking curiosity. Their animated gestures captivate attentive minds, fostering an atmosphere of learning. Neatly arranged desks serve as a canvas for education, while behind the teacher, a vibrant mural hints at the subject—perhaps marine biology or environmental science. 😊" onclick="openimg(this)">
+        <img src="image/image 2.jpg" alt="Image 2" data-description="In the classroom, the teacher is assisting a student at their desk, providing guidance and support. Other students are seated, some looking at the teacher while others focus on their work. The scene highlights an interactive learning session, emphasizing the importance of teacher-student engagement and active participation." onclick="openimg(this)">
+        <img src="image/image 3.jpeg" alt="Image 3" data-description="In the image, an individual is engaged in online learning, using a laptop and taking notes. The setup indicates active participation in a virtual educational environment. Sticky notes on the window suggest organization and task management, common in remote learning settings. The scene highlights focused and interactive learning." onclick="openimg(this)">
+        <img src="image/image 4.jpeg" alt="Image 4" data-description="In the school library, students are deeply engaged in studying and reading. They sit at tables with open books, collaborating and sharing knowledge. The atmosphere is one of focused learning, highlighting the library’s role as a vital space for academic growth and intellectual exploration." onclick="openimg(this)">
+        <img src="image/image 5.jpeg" alt="Image 5" data-description="Three children in graduation attire celebrate their milestone. They stand proudly, symbolizing the completion of an educational journey. Their smiles and caps reflect joy and achievement, marking a significant step in their academic lives. 🎓😊" onclick="openimg(this)">
+        <img src="image/image 6.jpg" alt="Image 6" data-description="In a rural setting, students sit on the ground, facing a blackboard propped against a tree. The teacher stands beside it, engaging them in a lesson. The lack of proper classrooms highlights their challenging learning environment, yet their determination to learn shines through. 🌳📚" onclick="openimg(this)">
+        <img src="image/image 7.jpg" alt="Image 7" data-description="In the image, a teacher is attentively guiding a special needs child, pointing at the laptop screen. The teacher’s focused interaction ensures the child understands the lesson, fostering a supportive and inclusive learning environment. This personalized attention highlights the importance of tailored education for special needs students, promoting their academic growth and confidence." onclick="openimg(this)">
+        <img src="image/image 8.jpg" alt="Image 8" data-description="The school group, led by their teacher, explores an art museum filled with classical statues. The students, backpacks on and attention captivated, absorb the rich history and artistic expressions around them. This educational excursion offers a tactile connection to their curriculum, making the past tangible and igniting young imaginations. 🎒🖼️" onclick="openimg(this)">
+    </div>
+
+    <!-- Color and font switcher -->
+    <div class="switcher">
+        <div class="switcherbtn">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>Select Color</h3>
+        <div class="theme">
+            <span class="theme-button" data-color="#8e44ad" style="background: #8e44ad;"></span>
+            <span class="theme-button" data-color="#3498db" style="background: #3498db;"></span>
+            <span class="theme-button" data-color="#2ecc71" style="background: #2ecc71;"></span>
+            <span class="theme-button" data-color="#e74c3c" style="background: #e74c3c;"></span>
+            <span class="theme-button" data-color="#f39c12" style="background: #f39c12;"></span>
+            <span class="theme-button" data-color="#9b59b6" style="background: #9b59b6;"></span>
+            <span class="theme-button" data-color="#1abc9c" style="background: #1abc9c;"></span>
+        </div>
+        <h3>Select Font</h3>
+        <div class="fonts">
+            <span class="font-button" data-font="Arial" style="font-family: Arial;">Arial</span>
+            <span class="font-button" data-font="Courier New" style="font-family: 'Courier New';">Courier New</span>
+            <span class="font-button" data-font="Georgia" style="font-family: Georgia;">Georgia</span>
+            <span class="font-button" data-font="Times New Roman" style="font-family: 'Times New Roman';">Times New Roman</span>
+            <span class="font-button" data-font="Verdana" style="font-family: Verdana;">Verdana</span>
+        </div>
+    </div>
+</body>
+</html>
