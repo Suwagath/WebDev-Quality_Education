@@ -159,6 +159,44 @@ body {
   margin-top: 10px;
 }
 
+/* Back to top button */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #37b7c3;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+  color: #ebf4f6;
+  font-size: 36px;
+  transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+  background-color: #071952;
+}
+
+.back-to-top:hover span {
+  color: #37b7c3;
+  transform: translateY(-4px);
+}
+
+.material-icons {
+  font-size: 36px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-menu {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- Character set declaration -->
   <meta charset="utf-8" />
@@ -8,11 +8,13 @@
   <!-- Link to the home page specific stylesheet -->
   <link rel="stylesheet" href="home.css" />
   <!-- Link to the global stylesheet used across all pages -->
-  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
   <!-- Link to the global JavaScript file -->
   <script src="global.js"></script>
   <!-- Link to Google Fonts for custom fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" />
+  <!-- Link to Google Fonts for custom shapes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <div class="homepage">
@@ -116,6 +118,11 @@
       </a>
     </section>
 
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+      <span class="material-icons">arrow_upward</span>
+    </a>
+
     <!-- Footer -->
     <footer class="homepage-footer">
       <div class="footer-content">
@@ -158,7 +165,7 @@
       <!-- Footer bottom with copyright text and page editor button -->
       <div class="footer-bottom">
         <p class="footer-text">© 2024 UN Quality Education. All rights reserved.</p>
-        <button class="page-editor">Page Editor</button>
+        <a href="suwagath.html"><button class="page-editor">Page Editor</button></a>
       </div>
     </footer>
   </div>
