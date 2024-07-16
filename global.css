@@ -46,11 +46,6 @@ body {
   border-bottom: 2px solid #37b7c3;
 }
 
-.nav-link.active {
-  color: #37b7c3;
-  border-bottom: 2px solid #37b7c3;
-}
-
 .auth-items {
   display: flex;
   flex-wrap: wrap;
