@@ -5,46 +5,44 @@
   align-items: center;
   height: 100vh;
   position: relative;
-}   
+}
+
 .heading {
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: color 0.3s ease;
+  text-align: center; /* Centers the  align text */
+  font-size: 25px; /* Font size of heading  */
+  font-weight: bold; /* Bold text */
+  position: absolute; /* Positioned absolutely */
+  top: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  transition: color 0.3s ease; /* Smooth color transition */
 }
-.heading:hover {
-  color: #005f73; /* Change to the color you want on hover */
-}
+
 .sitemap {
-  width: 100%;
-  height: auto;
-  margin-top: 50px; /* Adjusted to bring the sitemap closer to the heading */
-  transition: transform 0.3s ease;
+  width: 100%; /* Full width for sitemap */
+  height: auto; 
+  margin-top: 50px; 
+  transition: transform 0.3s ease; /* Smooth transform transition */
 }
+
 .nodes {
-  fill: #088395;
-  stroke: #088395;
-  stroke-width: 2px;
+  fill: #088395; /* Fill color for SVG elements with the give color  */
+  stroke: #088395; /*color */
+  stroke-width: 2px; 
 }
-.nodes:hover {
-  fill: #005f73;
-  stroke: #005f73; 
-}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #EBF4F6;
+  background-color: #EBF4F6; /* Background color of body  */
 }
+
 .hero-content {
-  background: #071952;
-  padding: 20px;
-  color: #ebf4f6;
-  position: sticky; top: 0;
-  z-index: 101;
-  
+  background: #071952; 
+  padding: 20px; 
+  color: #ebf4f6; 
+  position: sticky; 
+  top: 0; 
+  z-index: 101; 
 }
