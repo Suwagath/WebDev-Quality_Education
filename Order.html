@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Payment Details</legend>
+        <form action="">
+            <label>Card Number</label>
+            <div id="c-No">
+                <input type="text" id="cardNo" name="cardNo" placeholder="1234 1234 1234 1234"  maxlength="19">
+            </div>
+
+            <label>CardHolder Name</label>
+            <div id="c-Name">
+                <input type="text" id="cardHName" name="cardHName" placeholder="S KUMARAGURU">
+            </div>
+
+            <label>Expire Date</label>
+            <div id="Date">
+                <input type="datetime" id="cardDate" name="cardDate" placeholder="MM/YY">
+            </div>
+
+            <label>CVV</label>
+            <div id="cvv">
+                <input type="text" id="cardccv" name="cardccv" placeholder="xxx" maxlength="3">
+            </div>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Save</button>
+        </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Billing Address</legend>
+        <form action="">
+            <label>Address Line 1</label>
+            <div id="address1">
+                <input type="text" id="billaddress1" name="billaddress1">
+            </div>
+
+            <label>Address Line 2</label>
+            <div id="address2">
+                <input type="text" id="billaddress2" name="billaddress2">
+            </div>
+
+            <label>Address Line 3</label>
+            <div id="address3">
+                <input type="text" id="billaddress3" name="billaddress3">
+            </div>
+
+            
+            <label>City</label>
+            <div id="city">
+                <input type="text" id="cityname" name="cityname">
+            </div>
+
+            <label>State/Country</label>
+            <div id="state">
+                <input type="text" id="statecountry" name="statecountry">
+            </div>
+
+            <label>PostCode/Zip-Code</label>
+            <div id="PostCode">
+                <input type="text" id="Zip-Code" name="Zip-Code" maxlength="3">
+            </div>
+
+            <label>Country</label>
+            <div id="CountryName">
+                <select name="Country">
+                    <option selected>Please select</option>
+                    <option>Sri Lanka</option>
+                    <option>India</option>
+                </select>
+            </div>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Save</button>
+        </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Contact Details</legend>
+        <form action="">
+            <label>First Name</label>
+            <div id="fname">
+                <input type="text" id="firstname" name="firstname">
+            </div>
+
+            <label>SurName</label>
+            <div id="sname">
+                <input type="text" id="surname" name="surname">
+            </div>
+
+            <label>Phone Number</label>
+            <div id="pNo">
+                <input type="tel" id="phonenumber" name="phonenumber">
+            </div>
+
+            <label>Email Address</label>
+            <div id="email">
+                <input type="email" id="eaddress" name="eaddress">
+            </div>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Save</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Order</legend>
+        <div>
+            <span id="finalCon"></span>
+        </div>
+    </fieldset>
+<script src="Order.js"></script>
+</body>
+</html>

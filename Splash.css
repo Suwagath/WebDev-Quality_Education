@@ -1,0 +1,11 @@
+body{
+    background-image: url('Neon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: aliceblue;
+}h1{
+    text-align: center;
+}td.right{
+    text-align: right;
+}
