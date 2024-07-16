@@ -5,7 +5,7 @@ body {
 }
 
 h1, h2 {
-    color: #090705ab;
+    color: black;
     text-align: center;
     background-color: #37b7c3d2;
     border-radius: 10px;
@@ -19,8 +19,11 @@ h1 {
 
 h2 {
     font-size: 2em;
+    width: 50%;
+    margin-left: 24.4%;
 }
 
+/*Styles applied for profile infomation*/
 .proInfo {
     text-align: center;
     color: #000000;
@@ -30,17 +33,18 @@ h2 {
     margin: 20px auto;
     background-color: #37b7c382;
     width: 90%;
-    max-width: 700px;
+    max-width: 750px;
     font-weight: bold;
     font-size: 1.25em;
     border-radius: 20px;
     padding: 10px;
 }
 
+/*Styles applied for profile status*/
 .profileStatus {
     font-size: 1.5em;
     font-weight: bolder;
-    color: #000000;
+    color: black;
     margin-top: 20px;
     background-color: #37b7c382;
     border-radius: 30px;
@@ -49,35 +53,58 @@ h2 {
     margin-left: 5px;
 }
 
+/*Styles applied for custom prompt box*/
 #customPrompt {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#37b7c3;
-    border: 1px solid black;
     padding: 20px;
     width: 90%;
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none;
     border-radius: 5%;
+    background-color:#222c2dfe;
+    border: 1px inset black;
+    transform: translate(-50%, -50%);
 }
 
 .promptHead {
-    background-color: #071952;
+    background-color: #000000;
     color: #fff;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
 }
 
+#step{
+    font-size: 13px;
+}
+
 .promptBody {
     padding: 20px;
 }
 
+#message {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+#answer {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .promptFoot {
-    background-color: #071952;
+    background-color: #000000;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -112,27 +139,11 @@ h2 {
     background-color: #444;
 }
 
-#message {
-    margin-bottom: 20px;
-}
-
-#question {
-    font-weight: bold;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-#answer {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 #customPrompt.show {
     display: block;
 }
 
+/*Added to make page responsive*/
 @media (max-width: 600px) {
     h1 {
         font-size: 1.8em;

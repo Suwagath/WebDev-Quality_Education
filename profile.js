@@ -2,21 +2,38 @@ const questions_array = ["What is your first name? ",
                          "What is your last name? ",
                          "What is your age? ",
                          "What is your contact no.? ",
-                         "What is your gender? ",
-                         "Name of your institution? ",
-                         "What is your education level? ",
+                         "Do you have any additional degrees? ",
+                         "Name of your institution ",
+                         "What is your highest education level? ",
                          "Are you a school/university student? ",
-                         "What are your hobbies? ",
                          "What are your skills? ",
+                         "What are your hobbies? ",
                          "What is your favourite subject? ",
                          "What are your career goals? ",
                         ]
 
 let index = 0;
 let profile = [];
+let x = 0;
+let category = ["Personal Details", "Qualification", "Preferrences"];
+let y;
 
 function displayQuestions(index){
     document.getElementById("customPrompt").style.display = "block";
+
+    if(index<4){
+        x = 0;
+    }
+    else if(index<8){
+        x = 1;    
+    }
+    else{
+        x = 2;
+    }
+
+    y = category[x];
+    
+    document.getElementById("step").innerHTML = `Step ${x +1}/3 - ${y}`;
     document.getElementById("question").textContent = questions_array[index];
     
     
@@ -61,9 +78,42 @@ function previous(){
     }
 }
 
-function next(){
-    updateProfile();
+function validateInput(){
+    let valid = document.getElementById("answer").value;
     
+    if(valid===''){
+        alert("Use skip button to proceed to next question");
+    }
+    else if(index==0 || index==1){
+        if(!valid.match(/^[a-zA-Z\s]+$/)){
+            alert("Name should be alphabets only.");
+            displayQuestions(index);
+        }
+    }
+    else if(index===2){
+        if(!valid.match(/^\d+$/) || parseInt(valid)<0 || parseInt(valid)>150){
+            alert("Invalid Age.");
+            displayQuestions(index);
+        }
+    }
+    else if(index===3){
+        if(!valid.match(/^\d+$/) || parseInt(valid)<0){
+            alert("Invalid Contact Number.");
+            displayQuestions(index);
+        }
+    }
+    else{
+        if(!valid.match(/^[a-zA-Z/s]+$/)){
+            alert("Invalid Input");
+            displayQuestions(index);
+        }
+    }  
+}
+
+function next(){
+    validateInput();
+    updateProfile();
+        
     let input = document.getElementById("answer").value;
     if(input !== ''){
         diplayDetails();
@@ -72,9 +122,10 @@ function next(){
         if(index<questions_array.length){
             displayQuestions(index);
         }else{
+            alert("All prompts completed.");
             closePrompt();
         }
-    } 
+    }
 }
 
 function skip(){
@@ -82,6 +133,7 @@ function skip(){
         index++;
         displayQuestions(index);
     }else{
+        alert("End of question prompts.");
         closePrompt();
     }
 }
