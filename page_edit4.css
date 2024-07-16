@@ -1,0 +1,56 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #FF5733; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border-color: #192A56; 
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+legend h2 {
+    font-size: 1.2em;
+    color: #192A56; 
+    margin: 0;
+}
+
+p {
+    color: #555; 
+    margin: 0.5em 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    background-color: #192A56; /* Dark blue */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
