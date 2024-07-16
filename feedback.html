@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for responsiveness and character encoding -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage -->
   <title>Feedback Form</title>
+  <!-- Linking external CSS files for styling -->
   <link rel="stylesheet" href="feedback.css">
   <link rel="stylesheet" href="global.css">
+  <!-- Linking Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap">
+  <!-- Linking JavaScript files -->
   <script src="feedback.js"></script>
+  <script src="global.js"></script>
 </head>
 <body>
+  <!-- Header section with navigation menu -->
   <header class="hero-content">
     <div class="header-menu">
+      <!-- Logo of the organization -->
       <div class="logo">UN Quality Education</div>
+      <!-- Navigation links -->
       <nav class="navigation">
         <a class="nav-link" href="home.html">Home</a>
         <a class="nav-link" href="gallery.html">Gallery</a>
@@ -24,38 +33,47 @@
       </nav>
     </div>
   </header>
-
+  <!-- Main container for the feedback form -->
   <div class="container">
     <h1>Feedback Form</h1>
+    <!-- Note for required fields -->
     <p><sup style="color: red;">*</sup> marked fields are required</p>
+    <!-- Feedback form start -->
     <form action="#" method="post">
+      <!-- Name field -->
       <label for="name">Enter your name: <sup style="color: red;">*</sup></label>
-      <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+      <input type="text" id="name" name="name" placeholder="Enter your name here">
       
+      <!-- Email field -->
       <label for="email">Enter your email: <sup style="color: red;">*</sup></label>
-      <input type="email" id="email" name="email" placeholder="Enter email here" required>
-      
+      <input type="email" id="email" name="email" placeholder="Enter email here">
+
+      <!-- First visit question -->
       <p>Was this your first time visiting? <sup style="color: red;">*</sup></p>
       <label>
-        <input type="radio" name="first_visit" value="yes" required> Yes
+        <input type="radio" name="first_visit" value="yes"> Yes
       </label>
       <label>
-        <input type="radio" name="first_visit" value="no" required> No
+        <input type="radio" name="first_visit" value="no"> No
       </label>
-      
+
+      <!-- Website informative question -->
       <p>Was this website informative and easy to navigate through? <sup style="color: red;">*</sup></p>
       <label>
-        <input type="radio" name="informative" value="yes" required> Yes
+        <input type="radio" name="informative" value="yes"> Yes
       </label>
       <label>
-        <input type="radio" name="informative" value="no" required> No
+        <input type="radio" name="informative" value="no"> No
       </label>
-      
+
+      <!-- Suggestions for improvement -->
       <label for="improvements">If "No", suggest any improvements for the future:</label>
       <textarea id="improvements" name="improvements" rows="4" placeholder="Add your message here"></textarea>
-      
+
+      <!-- Satisfaction scale -->
       <p>How satisfied are you with our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!" <sup style="color: red;">*</sup></p>
       <div class="satisfaction-scale">
+        <!-- Satisfaction options -->
         <label>1<input type="radio" name="satisfaction" value="1"></label>
         <label>2<input type="radio" name="satisfaction" value="2"></label>
         <label>3<input type="radio" name="satisfaction" value="3"></label>
@@ -68,14 +86,16 @@
         <label>10<input type="radio" name="satisfaction" value="10"></label>
       </div>
       
+      <!-- Recommendation question -->
       <p>Would you recommend our services? <sup style="color: red;">*</sup></p>
       <label>
-        <input type="radio" name="recommend" value="yes" required> Yes
+        <input type="radio" name="recommend" value="yes"> Yes
       </label>
       <label>
-        <input type="radio" name="recommend" value="no" required> No
+        <input type="radio" name="recommend" value="no"> No
       </label>
       
+      <!-- Updates subscription -->
       <label for="updates">Would you like to receive updates about the website and any offers? <sup style="color: red;">*</sup></label>
       <select id="updates" name="updates">
         <option value="yes-email">Yes - via Email</option>
@@ -83,18 +103,21 @@
         <option value="no">No</option>
       </select>
       
+      <!-- Additional comments -->
       <label for="additional-comments">Do you have any additional questions or requests?</label>
       <textarea id="additional-comments" name="additional_comments" rows="4" placeholder="Add your message here"></textarea>
       
+      <!-- Submit button -->
       <button type="submit">Submit</button>
-      
     </form>
   </div>
-
+  <!-- Footer section -->
   <footer class="homepage-footer">
     <div class="footer-content">
+      <!-- Footer columns for organization info, links, and social media -->
       <div class="footer-column">
-        <h3 class="footer-logo">Logo</h3>
+        <!-- Organization logo and subscription call to action -->
+        <h3 class="footer-logo">UN Quality Education</h3>
         <p class="footer-text">Sign up to receive the latest news and updates.</p>
         <div class="footer-input">
           <input class="input-box" type="email" placeholder="Email Address" />
@@ -102,39 +125,37 @@
         </div>
       </div>
       <div class="footer-links">
+        <!-- Resource links -->
         <div class="resources">
           <h3 class="footer-heading">Resources</h3>
-          <a class="footer-link" href="#about">About</a>
-          <a class="footer-link" href="#blog">Blog</a>
-          <a class="footer-link" href="#terms">Terms</a>
-          <a class="footer-link" href="#privacy">Privacy</a>
-          <a class="footer-link" href="#contact">Contact</a>
+          <a class="footer-link" href="team.html">About</a>
+          <a class="footer-link" href="feedback.html">Contact</a>
         </div>
+        <!-- About us links -->
         <div class="about-us">
           <h3 class="footer-heading">About Us</h3>
           <a class="footer-link" href="#mission">Our Mission</a>
-          <a class="footer-link" href="#partners">Partners</a>
           <a class="footer-link" href="#impact">Impact</a>
-          <a class="footer-link" href="#press">Press</a>
         </div>
+        <!-- Campaign links -->
         <div class="campaigns">
           <h3 class="footer-heading">Campaigns</h3>
-          <a class="footer-link" href="#petitions">Petitions</a>
           <a class="footer-link" href="#stories">Success Stories</a>
-          <a class="footer-link" href="#community">Community</a>
-          <a class="footer-link" href="#fundraising">Fundraising</a>
+          <a class="footer-link" href="shop.html">Fundraising</a>
         </div>
+        <!-- Social media links -->
         <div class="social-media">
           <h3 class="footer-heading">Social Media</h3>
-          <a class="footer-link" href="#facebook">Facebook</a>
-          <a class="footer-link" href="#twitter">Twitter</a>
-          <a class="footer-link" href="#instagram">Instagram</a>
-          <a class="footer-link" href="#youtube">YouTube</a>
+          <a class="footer-link" href="https://facebook.com/globalgoalsun" target="_blank">Facebook</a>
+          <a class="footer-link" href="https://twitter.com/globalgoalsun" target="_blank">Twitter</a>
+          <a class="footer-link" href="https://www.instagram.com/unitednations" target="_blank">Instagram</a>
+          <a class="footer-link" href="https://www.youtube.com/@unitednations" target="_blank">YouTube</a>
         </div>
       </div>
     </div>
+    <!-- Footer bottom with copyright text -->
     <div class="footer-bottom">
-      <p class="footer-text">© 2023 Campoal. All rights reserved.</p>
+      <p class="footer-text">© 2024 UN Quality Education. All rights reserved.</p>
     </div>
   </footer>
 </body>

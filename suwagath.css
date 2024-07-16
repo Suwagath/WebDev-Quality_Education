@@ -1,0 +1,51 @@
+/* Editor Section */
+.editor-section {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .editor-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .editor-content h2,
+  .editor-content h3,
+  .editor-content p {
+    color: #071952;
+    margin: 20px 0;
+  }
+  
+  .task-list {
+    margin: 20px 0;
+  }
+  
+  .task {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task h4 {
+    margin: 10px 0;
+    color: #071952;
+  }
+  
+  .task p {
+    margin: 10px 0;
+    color: #071952;
+  }
+  
+  .task a {
+    color: #37b7c3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .task a:hover {
+    text-decoration: underline;
+  }
+  

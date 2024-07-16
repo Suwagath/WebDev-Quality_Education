@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Character set declaration -->
   <meta charset="utf-8" />
+  <!-- Viewport settings for responsive design -->
   <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <link rel="stylesheet" href="./home.css" />
-  <link rel="stylesheet" href="./global.css" />
+  <!-- Link to the home page specific stylesheet -->
+  <link rel="stylesheet" href="home.css" />
+  <!-- Link to the global stylesheet used across all pages -->
+  <link rel="stylesheet" href="global.css" />
+  <!-- Link to the global JavaScript file -->
+  <script src="global.js"></script>
+  <!-- Link to Google Fonts for custom fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" />
 </head>
 <body>
@@ -12,7 +19,11 @@
     <!-- Navigation Bar -->
     <header class="hero-content">
       <div class="header-menu">
-        <div class="logo">UN Quality Education</div>
+        <div class="logo">
+          <!-- Logo linking to the home page -->
+          <a href="home.html">UN Quality Education</a>
+        </div>
+        <!-- Navigation links -->
         <nav class="navigation">
           <a class="nav-link" href="home.html">Home</a>
           <a class="nav-link" href="gallery.html">Gallery</a>
@@ -27,83 +38,127 @@
     
     <!-- Banner Section -->
     <section class="banner">
+      <!-- Welcome message -->
       <h1>Welcome to Quality Education Initiative</h1>
+      <!-- Short introduction and call to action -->
       <p>Join us in our mission to provide quality education for all. Explore our resources, shop our products, and learn how you can contribute to a better future.</p>
-      <a class="cta-button" href="#learn-more">Learn More</a>
     </section>
     
     <!-- About Section -->
     <section class="about-section">
+      <!-- Section title -->
       <h2>About Our Initiative</h2>
+      <!-- Description of the initiative -->
       <p>The Quality Education Initiative, in partnership with the UN, strives to ensure inclusive and equitable quality education and promote lifelong learning opportunities for all. Our mission is to address the challenges and provide innovative solutions to improve education globally.</p>
     </section>
-    
-    <!-- Home Page Cards -->
-    <section class="cards-section">
-      <h1>Our Focus Areas</h1>
-      <div class="card">
-        <h3 class="card-title">Introduction to Quality Education</h3>
-        <p class="card-description">Learn about the importance of quality education and how it impacts communities worldwide.</p>
+
+    <!-- New Content Section with Images and Paragraphs -->
+    <section class="content-section">
+      <!-- Section title -->
+      <h2>Our Approach</h2>
+      <div class="content-wrapper">
+        <!-- Image with description -->
+        <img src="Resources\homepage_images\educational_programmes.png" alt="Educational Program" class="content-image">
+        <div class="content-text">
+          <!-- Detailed description of the approach -->
+          <p>We believe that quality education is the foundation for creating sustainable development. Our programs are designed to make learning more accessible and engaging for everyone. Through innovative teaching methods and the use of technology, we aim to bridge the educational gaps around the world.</p>
+          <p>Our team of educators, volunteers, and partners work tirelessly to create an inclusive learning environment. We focus on providing resources and support to those in need, ensuring that no one is left behind.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3 class="card-title">Challenges in Achieving Quality Education</h3>
-        <p class="card-description">Discover the barriers to providing quality education and our efforts to overcome them.</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Innovative Solutions</h3>
-        <p class="card-description">Explore innovative solutions and strategies to enhance education quality.</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Global Impact and Success Stories</h3>
-        <p class="card-description">Read about the global impact and success stories of our initiative.</p>
+      <div class="content-wrapper">
+        <!-- Image with description -->
+        <img src="Resources\homepage_images\classroom-environment.jpg" alt="Classroom Environment" class="content-image">
+        <div class="content-text">
+          <!-- Further details on classroom environment -->
+          <p>Our classrooms are designed to foster creativity and critical thinking. We encourage students to explore their interests and develop their skills through hands-on learning experiences. By promoting a growth mindset, we help students build confidence and resilience.</p>
+          <p>We also collaborate with local communities to understand their unique challenges and needs. This allows us to tailor our programs and initiatives to have the most significant impact.</p>
+        </div>
       </div>
     </section>
-    
+
+    <!-- Home Page Cards -->
+    <section class="cards-section">
+      <!-- Section title -->
+      <h1>Our Focus Areas</h1>
+      <!-- Card linking to more information -->
+      <a href="" class="card-link">
+        <div class="card">
+          <!-- Card title and description -->
+          <h3 class="card-title">Introduction to Quality Education</h3>
+          <p class="card-description">Learn about the importance of quality education and how it impacts communities worldwide.</p>
+          <!-- Card image -->
+          <img class="card-image" src="Resources\homepage_images\quality_education.jpg" alt="Quality Education">
+        </div>
+      </a>
+      <!-- Another card with link, title, description, and image -->
+      <a href="challenges.html" class="card-link">
+        <div class="card">
+          <h3 class="card-title">Challenges in Achieving Quality Education</h3>
+          <p class="card-description">Discover the barriers to providing quality education and our efforts to overcome them.</p>
+          <img class="card-image" src="Resources/homepage_images/challenges.webp" alt="Challenges">
+        </div>
+      </a>
+      <!-- Another card with link, title, description, and image -->
+      <a href="innovative.html" class="card-link">
+        <div class="card">
+          <h3 class="card-title">Innovative Solutions</h3>
+          <p class="card-description">Explore innovative solutions and strategies to enhance education quality.</p>
+          <img class="card-image" src="Resources\homepage_images\innovative_solutions.jpg" style="height: 100px;" alt="Innovative Solutions">
+        </div>
+      </a>
+      <!-- Another card with link, title, description, and image -->
+      <a href="" class="card-link">
+        <div class="card">
+          <h3 class="card-title">Global Impact and Success Stories</h3>
+          <p class="card-description">Read about the global impact and success stories of our initiative.</p>
+          <img class="card-image" src="Resources/homepage_images/success_stories.jpg" alt="Success Stories">
+        </div>
+      </a>
+    </section>
+
     <!-- Footer -->
     <footer class="homepage-footer">
       <div class="footer-content">
         <div class="footer-column">
+          <!-- Footer logo and subscription prompt -->
           <h3 class="footer-logo">UN Quality Education</h3>
           <p class="footer-text">Sign up to receive the latest news and updates.</p>
+          <!-- Email subscription form -->
           <div class="footer-input">
             <input class="input-box" type="email" placeholder="Email Address" />
             <button class="subscribe">Subscribe</button>
           </div>
         </div>
+        <!-- Footer links for resources, about us, campaigns, and social media -->
         <div class="footer-links">
           <div class="resources">
             <h3 class="footer-heading">Resources</h3>
-            <a class="footer-link" href="#about">About</a>
-            <a class="footer-link" href="#blog">Blog</a>
-            <a class="footer-link" href="#terms">Terms</a>
-            <a class="footer-link" href="#privacy">Privacy</a>
-            <a class="footer-link" href="#contact">Contact</a>
+            <a class="footer-link" href="team.html">About</a>
+            <a class="footer-link" href="feedback.html">Contact</a>
           </div>
           <div class="about-us">
             <h3 class="footer-heading">About Us</h3>
             <a class="footer-link" href="#mission">Our Mission</a>
-            <a class="footer-link" href="#partners">Partners</a>
             <a class="footer-link" href="#impact">Impact</a>
-            <a class="footer-link" href="#press">Press</a>
           </div>
           <div class="campaigns">
             <h3 class="footer-heading">Campaigns</h3>
-            <a class="footer-link" href="#petitions">Petitions</a>
             <a class="footer-link" href="#stories">Success Stories</a>
-            <a class="footer-link" href="#community">Community</a>
-            <a class="footer-link" href="#fundraising">Fundraising</a>
+            <a class="footer-link" href="shop.html">Fundraising</a>
           </div>
           <div class="social-media">
             <h3 class="footer-heading">Social Media</h3>
-            <a class="footer-link" href="#facebook">Facebook</a>
-            <a class="footer-link" href="#twitter">Twitter</a>
-            <a class="footer-link" href="#instagram">Instagram</a>
-            <a class="footer-link" href="#youtube">YouTube</a>
+            <a class="footer-link" href="https://facebook.com/globalgoalsun" target="_blank">Facebook</a>
+            <a class="footer-link" href="https://twitter.com/globalgoalsun" target="_blank">Twitter</a>
+            <a class="footer-link" href="https://www.instagram.com/unitednations" target="_blank">Instagram</a>
+            <a class="footer-link" href="https://www.youtube.com/@unitednations" target="_blank">YouTube</a>
           </div>
         </div>
       </div>
+      <!-- Footer bottom with copyright text and page editor button -->
       <div class="footer-bottom">
-        <p class="footer-text">© 2023 UN Quality Education. All rights reserved.</p>
+        <p class="footer-text">© 2024 UN Quality Education. All rights reserved.</p>
+        <button class="page-editor">Page Editor</button>
       </div>
     </footer>
   </div>
