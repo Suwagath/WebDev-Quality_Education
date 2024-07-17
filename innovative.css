@@ -121,3 +121,12 @@ li a:hover {
     color: #071952;
     width: 70%;
 }
+
+.pageEditor{
+    padding: 10px 10px;
+    cursor: pointer;
+    font-family: 'Sen', sans-serif;
+    color: white;
+    background-color: #37b7c3;
+    border-radius: 10px;
+}
