@@ -1,4 +1,4 @@
-* {
+* { /* reseting styles  */
     margin: 0;
     padding: 0;
     font-family: var(--main-font);
@@ -7,59 +7,59 @@
     transition: all .2s linear;
 }
 
-:root {
+:root {  /* default colors and font  */
     --main-color: #005f73; 
     --main-font: sans-serif; 
 }
 
-body {
+body {  /* body tag*/
     background-color: aliceblue;
     margin-top: 80px; 
 }
 
 
-.img-gallery {
-    width: 80%;
-    margin: 100px auto 50px;
-    display: grid;
+.img-gallery {  /* for image gallery */
+    width: 80%; /* width of container */
+    margin: 100px auto 50px; /* margin around the gallery  */
+    display: grid;/* to display as a grid */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 30px;/* gap between grid items  */
 }
 
 .img-gallery img {
-    width: 100%;
-    cursor: pointer;
+    width: 100%; /* image widthr */
+    cursor: pointer;/* pointer on hover  */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-gallery img:hover {
-    transform: scale(1.2) rotate(-15deg);
-    border-radius: 20px;
-    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+    transform: scale(1.2) rotate(-15deg); /* rotate */
+    border-radius: 20px;/* rounded corners  */
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);/* box shadow when hovering */
 }
 
-.full {
+.full { /* full view  */
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    display: none; /* initialy hidden */
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    overflow: hidden;
+    overflow: hidden; /* overflow is also hidden */
     flex-direction: column;
 }
 
 .full img {
-    width: 90%;
+    width: 90%; /* image widht in full screen  */
     max-width: 500px;
 }
 
 .full p {
-    color: white;
+    color: white; /* text color  */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px; 
@@ -68,7 +68,7 @@ body {
     word-wrap: break-word;
 }
 
-.nav {
+.nav { /* navigation buttons  */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -81,15 +81,15 @@ body {
     z-index: 1001;
 }
 
-.nav.left {
+.nav.left { /* move left*/
     left: 10px;
 }
 
-.nav.right {
+.nav.right { /* move right */
     right: 10px;
 }
 
-.close {
+.close {/* close button */
     position: absolute;
     top: 10px;
     right: 10px;
@@ -102,7 +102,7 @@ body {
     z-index: 1001;
 }
 
-.switcher {
+.switcher { /* theme and font switcher */
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -141,7 +141,6 @@ body {
     line-height: 30px;
     text-align: center;
 }
-
 .font-button {
     border-radius: 5px;
     width: auto;
