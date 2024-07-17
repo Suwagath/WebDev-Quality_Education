@@ -1,3 +1,4 @@
+/* Styling for sitemap */
 .design {
   display: flex;
   justify-content: center;
@@ -8,41 +9,46 @@
 }
 
 .heading {
-  text-align: center; /* Centers the  align text */
-  font-size: 25px; /* Font size of heading  */
+  text-align: center; /* Centers the text */
+  font-size: 25px; /* Font size of heading */
   font-weight: bold; /* Bold text */
   position: absolute; /* Positioned absolutely */
-  top: 10px; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .sitemap {
   width: 100%; /* Full width for sitemap */
-  height: auto; 
-  margin-top: 50px; 
+  height: auto;
+  margin-top: 50px;
   transition: transform 0.3s ease; /* Smooth transform transition */
 }
 
 .nodes {
-  fill: #088395; /* Fill color for SVG elements with the give color  */
-  stroke: #088395; /*color */
-  stroke-width: 2px; 
+  fill: #088395; /* Fill color for SVG elements */
+  stroke: #088395; /* Stroke color for SVG elements */
+  stroke-width: 2px;
+}
+
+.nodes:hover {
+  fill: #0c9bbd; /* Change fill color on hover */
+  stroke: #0c9bbd; /* Change stroke color on hover */
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #EBF4F6; /* Background color of body  */
+  background-color: #EBF4F6; /* Background color of body */
 }
 
 .hero-content {
-  background: #071952; 
-  padding: 20px; 
-  color: #ebf4f6; 
-  position: sticky; 
-  top: 0; 
-  z-index: 101; 
+  background: #071952;
+  padding: 20px;
+  color: #ebf4f6;
+  position: sticky;
+  top: 0;
+  z-index: 101;
 }
