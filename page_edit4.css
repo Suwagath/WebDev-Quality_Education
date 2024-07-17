@@ -1,17 +1,17 @@
-body {
+body {  /* setting the font background colur and padding */
     font-family: 'Comic Sans MS', cursive, sans-serif; 
     background-color: #f9f9f9;
     padding: 20px;
     color: #333;
 }
 
-h1 {
+h1 {/* setting styles for heading 1 */
     color: #FF5733; 
     text-align: center;
     margin-bottom: 20px;
 }
 
-fieldset {
+fieldset {/*setting styles for the fieldset */
     border-color: #192A56; 
     padding: 20px;
     margin-bottom: 20px;
@@ -19,7 +19,7 @@ fieldset {
     border-radius: 8px;
 }
 
-legend h2 {
+legend h2 { /*setting styles for legend and h2 */
     font-size: 1.2em;
     color: #192A56; 
     margin: 0;
@@ -44,11 +44,11 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover { /* setting styles on hover effect*/
     text-decoration: underline;
 }
 
-header, footer {
+header, footer { 
     background-color: #192A56; /* Dark blue */
     padding: 10px;
     text-align: center;

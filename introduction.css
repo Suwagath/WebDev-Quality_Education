@@ -1,0 +1,40 @@
+body, html { /*reseting*/
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;/*back ground color for the whole page */
+}
+
+.content-grid { /*creating a grid layout for responsiveness */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /*gap between the grid */
+  padding: 20px;
+}
+
+.grid-item { /*styling each item*/
+  border-radius: 8px;
+  overflow: hidden; /*ensures that it doesent overflows */
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-box { /*styling images within grid items */
+  width: 100%; 
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content { /*styling for content which is insided the grid items */
+  padding: 20px;
+}
+
+.legend, .paragraph { /*font style for specific elements */
+  font-family: 'Comic Sans MS', cursive;
+}
+
