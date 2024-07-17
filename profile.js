@@ -36,7 +36,7 @@ function displayQuestions(index){
     document.getElementById("step").innerHTML = `Step ${x +1}/3 - ${y}`;
     document.getElementById("question").textContent = questions_array[index];
     
-    
+   /*Used when previous button is tapped. This checks if there is an element in the array*/
     if(profile[index]!=null){
         document.getElementById("answer").value = profile[index];
     }else{
@@ -81,8 +81,9 @@ function previous(){
 function validateInput(){
     let valid = document.getElementById("answer").value;
     
-    if(valid===''){
+    if(valid==='' | valid===' '){
         alert("Use skip button to proceed to next question");
+        displayQuestions(index);
     }
     else if(index==0 || index==1){
         if(!valid.match(/^[a-zA-Z\s]+$/)){
@@ -91,7 +92,7 @@ function validateInput(){
         }
     }
     else if(index===2){
-        if(!valid.match(/^\d+$/) || parseInt(valid)<0 || parseInt(valid)>150){
+        if(!valid.match(/^\d+$/) || parseInt(valid)<0 || parseInt(valid)>=150){
             alert("Invalid Age.");
             displayQuestions(index);
         }

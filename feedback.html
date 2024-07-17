@@ -44,7 +44,7 @@
     <!-- Note for required fields -->
     <p><sup style="color: red;">*</sup> marked fields are required</p>
     <!-- Feedback form start -->
-    <form action="#" method="post">
+    <form id="feedback-form" action="#" method="post">
       <!-- Name field -->
       <label for="name">Enter your name: <sup style="color: red;">*</sup></label>
       <input type="text" id="name" name="name" placeholder="Enter your name here">
@@ -115,6 +115,10 @@
       <!-- Submit button -->
       <button type="submit">Submit</button>
     </form>
+    <!-- Success message container -->
+    <div id="success-message" class="success-message">
+      <p>We received your feedback! Thank you for contributing to make our services efficient to everyone!</p>
+    </div>
   </div>
 
   <!-- Back to top button -->
