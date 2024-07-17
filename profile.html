@@ -6,7 +6,7 @@
     <title>User Profile</title>
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="style.css">
-    <script src="global.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -32,37 +32,38 @@
     
     <div>
         <h1>User Profile</h1>
-        
+        <!--Display the questions and corresponding answer inside the div element containing the id-->
         <div class="proInfo">
             <h2>Profile Information:</h2>
             <div id="profileInformation"></div>
         </div>
     </div>
-    
+    <!--This is the place where parts of the custom prompt are defined-->
     <div id="customPrompt">
+      <!--Head of the custom prompt-->
         <div class="promptHead">
             <span id="customHead">Profile Update</span><br>
             <span id="step"></span>
         </div>
-
+      <!--Body of the custom prompt-->
         <div class="=promptBody">
             <div id="message">
                 <div id="question"></div>
                 <input type="text" id="answer" class="message">
             </div>
         </div>
-        
+      <!--Foot of the custom prompt-->  
         <div class="promptFoot">
             <button onclick="previous()">Previous</button>
             <button onclick="skip()">Skip</button>
             <button onclick="next()">Next</button>
         </div>
     </div>
-
+    
     <div class="profileStatus">
         <p>Profile Status:<span id="status">0%</span></p>
     </div>
-
+    <!--Start button to awake the custom prompt-->
     <div class="start"><button onclick="start()">Start Profile Creation</button></div>
 
     <!-- Footer -->
