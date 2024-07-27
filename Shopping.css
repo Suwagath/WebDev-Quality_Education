@@ -163,6 +163,8 @@ h3{
     border-bottom-left-radius: 20px;
 }button:hover{
     background: rgb(0, 225, 255);
+}#myheader{
+    margin-top: 70px;
 }
 @media(max-width:1000px){
     .nav{

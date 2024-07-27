@@ -4,7 +4,8 @@ body{
     background-color:azure;
 }legend{
     font-weight: 555;
-    background-color: aqua;
+    background-color: #071952;
+    color: #ebf4f6;
     width: 105.25%;
     position: relative;
     left: -15px;
@@ -85,4 +86,28 @@ fieldset{
     background-color:crimson;
 }#finalset #PlaceOrder:hover{
     background-color:#f2f2f2;
+}@media(max-width:1000px){
+    fieldset {
+        width: 300px;
+    }#finalset{
+        width: 300px;
+    }legend{
+        width: 108.5%;
+    }#finalset legend{
+        width:114%;
+    }
+}@media(max-width:700px){
+    fieldset{
+        width: 200px;
+    }#finalset{
+        width: 100px;
+    }.cart-img{
+        width: 80px;
+        height: 80px;
+        margin-left: -20px;
+    }legend{
+        width:113%;
+    }#finalset legend{
+        width: 124%;
+    }
 }

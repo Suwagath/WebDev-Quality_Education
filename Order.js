@@ -1,6 +1,8 @@
+//runs when page loaded successfully
 document.addEventListener('DOMContentLoaded', () => {
     var cartCount=localStorage.getItem("cartcount");
     var finalcont=document.getElementById("finalCon");
+    //store data from shop.html
     for(let i=0;i<cartCount;i++){
         var StockName=localStorage.getItem("stockName"+i);
         var StockQua=localStorage.getItem("stockquantity"+i);
@@ -18,11 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="cart-quantity">Quantity: ${StockQua}</div>
             </div>
         `;
+        //append the above format in html
         finalcont.appendChild(cartBox); 
     }
     var StockTotal=localStorage.getItem("Stocktotal");
     document.getElementsByClassName("s-price")[0].innerText=StockTotal;   
 });
+//validation for cardnum
 let cNo=document.getElementById("cardNo");
 cNo.addEventListener('keyup',function(e){
     let num=cNo.value;
@@ -43,7 +47,7 @@ cNo.addEventListener('keyup',function(e){
     }
 });
 
-
+//validation for carddate
 let expDate=document.getElementById("cardDate");
 expDate.addEventListener('keyup',function(e){
     let newInput=expDate.value;
@@ -73,7 +77,7 @@ SingleEntry("cityname","[a-zA-Z\s]+");
 SingleEntry("firstname","[a-zA-Z\s]+");
 SingleEntry("surname","[a-zA-Z\s]+");
 SingleEntry("eaddress","[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$");
-
+//validation for types except numeric only
 function SingleEntry(y,Namepattern){
     let x=document.getElementById(y);
     x.addEventListener('keyup',function(e){
@@ -90,7 +94,7 @@ function SingleEntry(y,Namepattern){
 
 
 
-
+//validation for numeric only
 NumericInput("cardccv",3);
 NumericInput("Zip-Code",5);
 NumericInput("phonenumber",10);
@@ -119,7 +123,7 @@ CountryName.addEventListener('click',function(e){
         CountryName.style.border="2px solid greenyellow";
     }
 });
-
+//form border turn green if accepted
 let formone=document.getElementById("form_one");
 let fieldone=document.getElementById("fieldone");
 let subformone=false;
@@ -137,7 +141,7 @@ formone.addEventListener('reset',function(e){
         inputformone[i].style.border="2px solid red";
     }
 });
-
+//form border turn green if accepted
 let formtwo=document.getElementById("form_two");
 let fieldtwo=document.getElementById("fieldtwo");
 let subformtwo=false;
@@ -160,7 +164,7 @@ formtwo.addEventListener('reset',function(e){
         }
     }
 });
-
+//form border turn green if accepted
 let formthree=document.getElementById("form_three");
 let fieldthree=document.getElementById("fieldthree");
 let subformthree=false;
@@ -180,7 +184,7 @@ formthree.addEventListener('reset',function(e){
     }
 });
 
-
+//placeorder form button turn blue if all form submitted
 function allFormChecked(){
     let finalSet=document.getElementById("finalset");
     let finalButton=document.getElementById("PlaceOrder");
@@ -189,6 +193,7 @@ function allFormChecked(){
         finalButton.style.backgroundColor="blue";
     }
 }
+//return to shop if submit accepted
 let FinalOrder=document.getElementById("PlaceOrder");
 FinalOrder.addEventListener('click',function(e){
     if(!subformone || !subformtwo || !subformthree){
@@ -199,7 +204,7 @@ FinalOrder.addEventListener('click',function(e){
     alert("The order has been placed successfully");
     window.location.href="shop.html";     
 });
-
+//returm to shop if exit
 let FinalExit=document.getElementById("Exit");
 FinalExit.addEventListener('click',function(e){
     alert("The order has been cancelled");
