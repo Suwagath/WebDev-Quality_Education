@@ -59,17 +59,19 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault(); 
 
       // Get additional comments
-      const comments = document.getElementById("additional-comments").value;
+      const comments = document.getElementById("additional-comments").value.trim();
 
       // Define email subject and body
       const subject = 'Feedback Form Received';
-      let body;
-
-      if (comments.trim() === "") {
-        body = `Dear ${name},\n\nWe have received your feedback. Below are the details of your feedback submission:\n1. Satisfaction: ${satisfaction.value}/10\n2. No additional comments provided.\n\nThank you for your time :)`;
-      } else {
-        body = `Dear ${name},\n\nWe have received your feedback. Below are the details of your feedback submission:\n1. Satisfaction: ${satisfaction.value}/10\n2. Additional Comments: ${comments}\n\nThank you for your time :)`;
-      }
+      const body = `Dear ${name},\n\nWe have received your feedback. Below are the details of your feedback submission:\n
+                    1. First Visit: ${firstVisit.value}\n
+                    2. Informative and Easy to Navigate: ${informative.value}\n
+                    3. Areas for Improvement: ${document.getElementById("improvements").value}\n
+                    4. Satisfaction: ${satisfaction.value}/10\n
+                    5. Would Recommend: ${recommend.value}\n
+                    6. Updates: ${updates}\n
+                    7. Additional Comments: ${comments || "No additional comments provided."}\n\n
+                    Thank you for your time :)`;
 
       // Create and open mailto link
       const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
