@@ -54,10 +54,28 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("Please select if you would like to receive updates.");
     }
 
-    // Show success message if form is valid
     if (validation) {
-      event.preventDefault();  // Prevent actual form submission
+      // Prevent actual form submission
+      event.preventDefault(); 
 
+      // Get additional comments
+      const comments = document.getElementById("additional-comments").value;
+
+      // Define email subject and body
+      const subject = 'Feedback Form Received';
+      let body;
+
+      if (comments.trim() === "") {
+        body = `Dear ${name},\n\nWe have received your feedback. Below are the details of your feedback submission:\n1. Satisfaction: ${satisfaction.value}/10\n2. No additional comments provided.\n\nThank you for your time :)`;
+      } else {
+        body = `Dear ${name},\n\nWe have received your feedback. Below are the details of your feedback submission:\n1. Satisfaction: ${satisfaction.value}/10\n2. Additional Comments: ${comments}\n\nThank you for your time :)`;
+      }
+
+      // Create and open mailto link
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+
+      // Display success message
       const successMessage = document.getElementById("success-message");
       form.reset();
       successMessage.classList.add("show");
