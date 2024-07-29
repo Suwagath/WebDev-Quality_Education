@@ -86,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function() {
         successMessage.classList.remove("show");
         successMessage.classList.remove("animated", "fadeIn");
       }, 4000);
+      setTimeout(() => {
+        window.location.href = mailtoLink;
+      }, 3000);  // 3-second delay before opening the email window
     } else {
       event.preventDefault();
     }
